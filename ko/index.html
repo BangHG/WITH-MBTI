@@ -1,6 +1,26 @@
 ﻿<!DOCTYPE html>
 <html lang="ko">
-  <? include "inc/head.html" ?>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>무인도 생존 유형 테스트</title>
+    <meta property="og:image" content="../assets/og_img/og_img-ko.png" />
+
+    <link rel="icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/common.min.css" />
+
+    <script>
+      var $lang = 'ko';
+      var $shareUrl = '../ko/result?type=1';
+
+      var $imgRootUrl = '..';
+      var $resultUrl = '../ko/result.html?type={type}';
+    </script>
+  </head>
 
   <body class="page page__landing">
     <main class="main">
@@ -29,7 +49,27 @@
       </div>
 
       <div class="main__util">
-        <? include "inc/share-sns.html" ?>
+        <ul class="sns-list">
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--facebook" title="페이스북"></button>
+          </li>
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--whatsapp" title="왓츠앱"></button>
+          </li>
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--line" title="라인"></button>
+          </li>
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--twitter" title="트위터"></button>
+          </li>
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--kakaotalk" title="카카오톡"></button>
+          </li>
+          <li class="sns-list__item">
+            <button type="button" class="sns sns--link" onclick="copyUrl()" title="주소복사"></button>
+          </li>
+        </ul>
+
         <ul class="language-list">
           <li class="item"><a href="../ko/index.html" class="link active">KOR</a></li>
           <li class="item"><a href="#" class="link">ENG</a></li>
@@ -37,7 +77,15 @@
         </ul>
       </div>
     </main>
-    <? include "inc/footer.html" ?>
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright">© SKYWALK &amp; Gravity Co., Ltd. All rights reserved</div>
+        <div class="logo">
+          <span class="sr-only">SKYWALK</span>
+          <span class="sr-only">GRAVITY</span>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/common.min.js"></script>
   </body>
