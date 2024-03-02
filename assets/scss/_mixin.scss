@@ -1,0 +1,45 @@
+﻿@function em($val, $std: 16) {
+  @return ($val/$std) * 1em;
+}
+
+// @function rem($val, $std: 16) {
+//   @return ($val/$std) * 1rem;
+// }
+
+$mobile-size: 400;
+@function vw($val, $std: $mobile-size) {
+  @return ($val/($std/100)) * 1vw;
+}
+
+@function css-function($function, $values...) {
+  @return $function + unquote('(') + $values + unquote(')');
+}
+
+@function css-min($val1, $val2) {
+  @return css-function(min, ($val1 / 2), ($val2/2));
+}
+
+@function css-max($val1, $val2) {
+  @return css-function(max, ($val1 / 2), ($val2/2));
+}
+
+@mixin lg-min {
+  @media all and (min-width: 767.8px) {
+    @content;
+  }
+}
+@mixin lg {
+  @media all and (max-width: 768px) {
+    @content;
+  }
+}
+@mixin md-min {
+  @media all and (min-width: 399.8px) {
+    @content;
+  }
+}
+@mixin md {
+  @media all and (max-width: 400px) {
+    @content;
+  }
+}

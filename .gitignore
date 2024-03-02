@@ -1,0 +1,5 @@
+﻿.vscode
+*.bak.*
+bak
+template
+node_modules

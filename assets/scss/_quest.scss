@@ -1,0 +1,290 @@
+﻿// 테스트
+// .section-question {
+//   height: auto;
+// }
+// .question {
+//   display: block !important;
+//   position: relative;
+//   margin-top: 50px;
+//   border-top: 1px solid #000;
+//   padding-top: 50px;
+// }
+
+.step {
+  text-align: left;
+  padding: 0 css-min(80px, vw(80));
+  width: 100%;
+  margin-top: css-min(120px, vw(120));
+  &__count {
+    text-align: center;
+    font-size: css-min(30px, vw(30));
+    color: #4d2739;
+    font-weight: 600;
+    &:after {
+      content: ' / 12';
+    }
+  }
+  &__progress {
+    margin-top: css-min(38px, vw(38));
+    margin-bottom: css-min(70px, vw(70));
+    height: css-min(40px, vw(40));
+    background-color: #f5ccdd;
+    border-radius: css-min(40px, vw(40));
+    // overflow: hidden;
+    display: block;
+    width: 100%;
+    position: relative;
+    &__now {
+      display: inline-block;
+      width: 8%;
+      height: 100%;
+
+      border-radius: css-min(40px, vw(40));
+      transition: width 500ms;
+      background: url(../images/quest/step-bg.png) no-repeat;
+      background-size: 100% 100%;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -63%);
+        background: url(../images/quest/step-icon.png) no-repeat;
+        background-size: contain;
+        width: css-min(56px, vw(56));
+        height: css-min(83px, vw(83));
+      }
+    }
+  }
+}
+
+.section-question {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+.questions-container {
+  position: relative;
+  overflow: hidden;
+  min-height: css-min(1600px, vw(1600));
+  @include lg-min {
+    padding-bottom: 40px;
+    min-height: 640px;
+  }
+  @include md {
+    min-height: css-min(640px * 2, vw(640 * 2));
+    @at-root html[lang='ja'] &,
+      html[lang='en'] & {
+      min-height: css-min(680px * 2, vw(680 * 2));
+    }
+  }
+}
+
+.question {
+  font-weight: 500;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  .text {
+    font-size: css-min(48px, vw(48));
+    word-break: keep-all;
+    margin: 0;
+    line-height: (56/48);
+    min-height: 1.3em * 2;
+    padding: 0 css-min(40px, vw(40));
+    box-sizing: content-box;
+    // letter-spacing: -0.04em;
+
+    @at-root html[lang='ja'] &,
+      html[lang='en'] & {
+      @include lg {
+        min-height: 1.3em * 3;
+      }
+    }
+    @at-root html[lang='ja'] & {
+      font-weight: 600;
+    }
+    @include lg-min {
+      font-size: 27px;
+    }
+  }
+  .img-bx {
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  @include md-min {
+    .text {
+      padding-top: 50px;
+    }
+    .img-bx {
+      padding-bottom: 50px;
+    }
+  }
+  .answer-bx {
+    padding: 0 css-min(40px, vw(40));
+    gap: 25px;
+    @include lg-min {
+      row-gap: css-min(30px, vw(30));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .answer {
+    // max-width: css-min(640px, vw(640));
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: css-min(40px, vw(40));
+    line-height: 1.3;
+    min-height: css-min(180px, vw(180));
+    // padding-top: css-min(6px, vw(6));
+    padding: 0 1em;
+    @at-root html[lang='ko'] & {
+      padding: 0;
+    }
+    padding-top: 0.1em;
+    border-radius: css-min(180px, vw(180));
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    word-break: keep-all;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: css-min(30px, vw(30));
+    font-family: inherit;
+    transition: 300ms background-color;
+    background-color: #8599d8;
+    &:hover {
+      background-color: lighten(#8599d8, 5%);
+    }
+    @include lg-min {
+      height: 100px;
+      border-radius: 100px;
+      font-size: 22px;
+      margin: 0;
+    }
+    &:last-child {
+      background-color: #f097c7;
+      &:hover {
+        background-color: lighten(#f097c7, 5%);
+      }
+    }
+  }
+  &#q2 {
+    .img-bx {
+      max-width: 100%;
+      min-height: css-min(350px * 2, vw(350 * 2));
+      box-sizing: content-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  // }
+}
+
+.loading {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffedf4;
+  z-index: 100;
+  text-align: center;
+  // display: flex;
+  justify-content: center;
+  align-content: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  display: none;
+  // &__wrap {
+  //   max-width: 400px;
+  //   margin: 0 auto;
+  // }
+  &__heart {
+    margin: css-min(140px, vw(140)) auto;
+    width: css-min(102px, vw(102));
+    position: relative;
+    img {
+      animation: heartBeat 500ms infinite alternate;
+    }
+  }
+  .img-bx {
+    max-width: $mobile-size * 1px;
+    margin: 0 auto;
+  }
+  .text {
+    font-size: css-min(58px, vw(58));
+    font-weight: 600;
+    // letter-spacing: -0.04em;
+    line-height: (66/58);
+    margin-bottom: css-min(70px, vw(70));
+  }
+  .loading-text {
+    font-size: css-min(46px, vw(46));
+    // letter-spacing: -0.04em;
+    font-weight: 500;
+    span {
+      display: inline-block;
+    }
+  }
+}
+
+.loading-text {
+  span {
+    margin: 0 -0.075em;
+    animation: loading 1s infinite alternate;
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i + 1}) {
+        animation-delay: #{$i * 0.1}s;
+      }
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    // transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    // transform: scale(0.8);
+  }
+}
+
+@keyframes heartBeat {
+  to {
+    transform: scale(0.8);
+    // transform: scale(1.3);
+  }
+}
+
+.page__test,
+.page__result {
+  .main {
+    max-width: 800px;
+  }
+}
+.result {
+  .survive-category {
+    display: inline-block;
+    padding-left: 0;
+  }
+}

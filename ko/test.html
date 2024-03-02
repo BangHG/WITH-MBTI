@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <? include "inc/head.html" ?>
+
+  <body class="page page__test">
+    <main class="main">
+      <section class="section-question">
+        <div class="step">
+          <div class="step__count">1</div>
+          <span class="step__progress">
+            <span class="step__progress__now"></span>
+          </span>
+        </div>
+
+        <div id="questions" class="questions-container"></div>
+      </section>
+
+      <section id="loading" class="loading">
+        <div class="main">
+          <p class="loading__heart">
+            <img src="../assets/images/quest/loading-heart.png" alt="" />
+          </p>
+          <p class="text">
+            두근두근
+            <br />
+            나의 무인도 생존 유형은?
+          </p>
+          <div class="img-bx"><img src="../assets/images/quest/loading.jpg" alt="" /></div>
+          <p class="loading-text">
+            무인도 생존 유형 분석 중
+            <span>.</span>
+            <span>.</span>
+            <span>.</span>
+          </p>
+        </div>
+      </section>
+    </main>
+    <? include "inc/footer.html" ?>
+    <script src="../assets/js/test.min.js"></script>
+    <script src="js/common.min.js"></script>
+  </body>
+</html>

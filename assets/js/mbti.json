@@ -1,0 +1,304 @@
+﻿{
+  "question": [
+    {
+      "id": 1,
+      "img": "1.jpg",
+      "quest": {
+        "ko": "눈을 떴는데 낯선 공간.. <br>무인도다",
+        "en": "I woke up and found myself <br>on a deserted island.",
+        "ja": "目を覚ましたら、<br>無人島にいました。"
+      },
+      "answer0": {
+        "value": "S",
+        "text": {
+          "ko": "여긴 처음 보는데.. <br>내가 어떤 상황인지 파악해보자",
+          "en": "Where am I? I'll see what kind of situation I'm in.",
+          "ja": "ここはどこだろう？<br>状況を把握してみよう。"
+        }
+      },
+      "answer1": {
+        "value": "N",
+        "text": {
+          "ko": "파스텔 톤의 무인도라니 신기해! <br>구경해볼까?",
+          "en": "How fascinating! Shall I take a look around?",
+          "ja": "パステルトーンの無人島、<br>探検しようか？"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "img": "2.jpg",
+      "quest": {
+        "ko": "내가 하늘을 나는 <br>고래 등 위에 있다고?",
+        "en": "Am I on the back of a flying whale in the sky?",
+        "ja": "空を飛ぶクジラの上にいるのか？"
+      },
+      "answer0": {
+        "value": "E",
+        "text": {
+          "ko": "이것도 인연이니 먼저 인사해보자! <br>안녕 고래야~",
+          "en": "This must be destiny, <br>so let me greet first!",
+          "ja": "挨拶してみよう！<br>こんにちは、クジラさん！"
+        }
+      },
+      "answer1": {
+        "value": "I",
+        "text": {
+          "ko": "먼저 말 걸긴 좀 부끄러워. <br>먼저 말 걸어주겠지?",
+          "en": "Shall I wait until it <br>starts the conversation?",
+          "ja": "照れるけど、相手が先に<br>話しかけてくれるかな？"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "img": "3.jpg",
+      "quest": {
+        "ko": "호수도 있고 물고기도 있네. <br>정착해볼까?",
+        "en": "Alright, <br>let me settle down here.",
+        "ja": "さて、<br>ここに落ち着きましょう。"
+      },
+      "answer0": {
+        "value": "T",
+        "text": {
+          "ko": "일단 집을 짓고, 이곳에서<br> 뭘 먹을 수 있는지 찾아봐야지",
+          "en": "I should build a home.<br> I also have to see what I can eat here.",
+          "ja": "とりあえず家を建てて、<br>食べ物を見つけよう。"
+        }
+      },
+      "answer1": {
+        "value": "F",
+        "text": {
+          "ko": "배가 너무 고파.<br> 낚시해서 배부터 채워야겠다",
+          "en": "I'm really hungry. <br>I should go fishing and have a meal first.",
+          "ja": "お腹が空いたから<br>魚を釣ろう。"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "img": "4.jpg",
+      "quest": {
+        "ko": "현재 내 여행가방에 <br>있는 건",
+        "en": "Let me check what I have now. <br>In my bag, I have...",
+        "ja": "現在、<br>旅行かばんには..."
+      },
+      "answer0": {
+        "value": "P",
+        "text": {
+          "ko": "이틀치 먹을거리와 <br>여벌의 옷, 사진기",
+          "en": "A two-day supply of food, <br>spare clothes, and <br>a camera.",
+          "ja": "2日分の食べ物と<br>予備の服、カメラが"
+        }
+      },
+      "answer1": {
+        "value": "J",
+        "text": {
+          "ko": "생필품에 다이어리, 나침반, <br>응급키트까지 없는 게 없군!",
+          "en": "I even have a diary,<br> compass, an emergency<br> kit, and more",
+          "ja": "ダイアリー、羅針盤、<br>応急キットなどすべてのもの"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "img": "5.jpg",
+      "quest": {
+        "ko": "여기서 나의 새로운 삶을<br> 시작하다니…",
+        "en": "Starting a new life here...",
+        "ja": "ここで新しい人生が始まるとは..."
+      },
+      "answer0": {
+        "value": "N",
+        "text": {
+          "ko": "눈 앞에 멋진 건물과 <br>예쁜 마을이 그려져, 기대돼!",
+          "en": "I can envision <br>a beautiful village. <br>Looking forward to it!",
+          "ja": "美しい街や建物が<br>広がり期待が高まる！"
+        }
+      },
+      "answer1": {
+        "value": "S",
+        "text": {
+          "ko": "마을을 건설하려면<br> 뭐부터 해야하지?",
+          "en": "What should I do <br>to build a village? <br>In what order?",
+          "ja": "街をつくるには何から<br>始めればいいかな？"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "img": "6.jpg",
+      "quest": {
+        "ko": "먼저 내가 살 집을<br> 지어야겠다!",
+        "en": "I should build a house <br>for myself first!",
+        "ja": "まずは自分の家を<br>建てなければ！"
+      },
+      "answer0": {
+        "value": "P",
+        "text": {
+          "ko": "머릿속에 그동안 그려온 <br>꿈의 집을 떠올려본다",
+          "en": "I can picture <br>the dream house that <br>I've been wanting.",
+          "ja": "心に描いてきた夢の家を<br>思い浮かべる。"
+        }
+      },
+      "answer1": {
+        "value": "J",
+        "text": {
+          "ko": "도면을 그리고 <br>기초공사를 진행하고 재료는….",
+          "en": "I'll sketch a blueprint <br>and start with <br>the foundational work.",
+          "ja": "設計図を描いて<br>基礎工事を進め、..."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "img": "7.gif",
+      "quest": {
+        "ko": "집을 짓고 하늘을 보니 <br>별이 반짝이고 있다. 지금 나는",
+        "en": "I'm lying alone, looking at stars. <br>In this moment, I am..",
+        "ja": "空を見上げると、<br>星がきらめいています。今、私は..."
+      },
+      "answer0": {
+        "value": "I",
+        "text": {
+          "ko": "고독과 사색을 만끽하는 중",
+          "en": "Enjoying the solitude <br>that I feel from <br>being alone..",
+          "ja": "ひとりを満喫して<br>思いを巡らせています。"
+        }
+      },
+      "answer1": {
+        "value": "E",
+        "text": {
+          "ko": "친구와 아름다운 풍경에 대해 <br>얘기하고 싶어~",
+          "en": "Wishing to share <br>this scenery with friends",
+          "ja": "友達と美しい風景について<br>話したいです。"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "img": "8.jpg",
+      "quest": {
+        "ko": "문득 친구 생각이 난다. <br>떠오르는 친구는",
+        "en": "Gazing at the sky, my friends come to mind. They are…",
+        "ja": "ふと友達のことを思い出しました。<br>思い浮かぶ友達は..."
+      },
+      "answer0": {
+        "value": "I",
+        "text": {
+          "ko": "3명 정도의 친구들이<br> 생각나는걸?",
+          "en": "Around three friends.",
+          "ja": "3人くらい友達の顔が<br>浮かぶなぁ"
+        }
+      },
+      "answer1": {
+        "value": "E",
+        "text": {
+          "ko": "두 손을 모두 사용해야 <br>친구들을 다 셀 수 있어",
+          "en": "Almost 10 friends",
+          "ja": "友達がたくさんいて、<br>両手が必要だよ。"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "img": "9.jpg",
+      "quest": {
+        "ko": "이런.. 거센 바람 때문에 <br>집이 무너졌다",
+        "en": "The house collapsed <br>because of the strong wind",
+        "ja": "残念！強風で家が<br>飛んでいってしまいました。"
+      },
+      "answer0": {
+        "value": "T",
+        "text": {
+          "ko": "마음 아프지만 이 상황을<br> 어떻게 해결할지 생각해보자",
+          "en": "Let me stay calm. <br>I should think <br>how to get it back.",
+          "ja": "この状況をどう解決するか<br>考えてみましょう。"
+        }
+      },
+      "answer1": {
+        "value": "F",
+        "text": {
+          "ko": "너무 속상해... <br>잠시 쉬면서 한바탕 울고 털어내야지",
+          "en": "So devastated. <br>I should take a moment <br>to let out emotions.",
+          "ja": "悲しいけれど、<br>一旦心を落ち着かせましょう。"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "img": "10.jpg",
+      "quest": {
+        "ko": "바람이 휩쓸고 간 자리를 보는데.. <br>눈에 띄는 것이 있다",
+        "en": "Looking at the ruined house,<br> something caught my eye.",
+        "ja": "風で吹き飛ばされた場所を見ると、<br>何かが目につきます。"
+      },
+      "answer0": {
+        "value": "T",
+        "text": {
+          "ko": "쓸 수 있는 자재들이 있잖아?<br> 정말 다행이다!",
+          "en": "There are usable materials among the debris. <br>What a relief!",
+          "ja": "良かった！使える素材が<br>ありそうです！"
+        }
+      },
+      "answer1": {
+        "value": "F",
+        "text": {
+          "ko": "친구들과 찍은 사진이잖아? <br>소중한 사진 절대 사수해!",
+          "en": "Those are the photos <br>I took with my friends. <br>So precious!",
+          "ja": "友達と撮った大切な<br>写真は絶対に守ってください！"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "img": "11.jpg",
+      "quest": {
+        "ko": "다시 한번 마을을 세워보자!",
+        "en": "Let me rebuild the village!<br> This time, I'll construct it properly.",
+        "ja": "再び街をつくりましょう！"
+      },
+      "answer0": {
+        "value": "J",
+        "text": {
+          "ko": "전체적인 구도를 잡고 <br>하나씩 만들어봐야겠어!",
+          "en": "I'll establish the layout, <br>and then build buildings <br>in order.",
+          "ja": "全体のレイアウトを決めて<br>コツコツつくりあげましょう！"
+        }
+      },
+      "answer1": {
+        "value": "P",
+        "text": {
+          "ko": "원하는 곳에 집을 만들고, <br>다른 건 필요할 때 생각해봐야지~",
+          "en": "I'll build a house in a nice <br>location and think of <br>the others later.",
+          "ja": "家を建ててから、必要なことは<br>その時に考えましょう。"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "img": "12.jpg",
+      "quest": {
+        "ko": "마을이 번성해 위즈들이 이주해왔다. <br>다들 바쁘게 움직이는데",
+        "en": "The village flourishes with my efforts. It's been bustling.",
+        "ja": "ウィズが移住してきて、<br>皆忙しく動いていますが、"
+      },
+      "answer0": {
+        "value": "S",
+        "text": {
+          "ko": "아침부터 부지런하게 <br>움직이고 있군",
+          "en": "Everyone is working diligently. Looks good!",
+          "ja": "朝からコツコツがんばって<br>いるんだね。"
+        }
+      },
+      "answer1": {
+        "value": "N",
+        "text": {
+          "ko": "아침부터 바쁘게 돌아가는게 <br>생기있어 보여",
+          "en": "The village looks so <br>active and lively.",
+          "ja": "朝から忙しく元気に<br>動き回っている姿が印象的です。"
+        }
+      }
+    }
+  ]
+}

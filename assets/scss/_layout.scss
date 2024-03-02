@@ -1,0 +1,101 @@
+﻿body {
+  margin: 0 auto;
+  // max-width: 640px;
+  width: 100%;
+  // padding: 20px;
+  background-color: #feedf3;
+  &::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+  }
+}
+
+.main {
+  width: 100%;
+  margin: 0 auto;
+  color: #4d2739;
+}
+
+.container {
+  max-width: 800px; //$mobile-size * 1px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 css-min(vw(40), 40px);
+}
+
+* {
+  color: inherit;
+  box-sizing: border-box;
+  word-break: keep-all;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
+
+  @at-root html[lang='ko'] & {
+    letter-spacing: -0.04em;
+  }
+  @at-root html[lang='en'] & {
+    letter-spacing: -0.02em;
+  }
+}
+
+// $footerHeight: 115px;
+.main,
+.story {
+  overflow: hidden;
+  position: relative;
+  min-height: calc(100vh - vw(170/2)) !important;
+  @include lg-min {
+    min-height: calc(100vh - 80px) !important;
+  }
+  // max-height: calc(100vh - #{$footerHeight}) !important;
+}
+
+.footer {
+  // height: $footerHeight;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  z-index: 100;
+  // min-height: css-min(240px, vw(240));
+  background: #fff url(../images/inc/footer_m.jpg) no-repeat 50% 0;
+  @include lg {
+    background-size: contain;
+    height: vw(170/2);
+  }
+  @include lg-min {
+    height: 80px;
+    background-image: url(../images/inc/footer.jpg);
+  }
+  // padding: css-min(40px, vw(40)) 0;
+  // .copyright {
+  //   font-size: min(13px, 0.7em);
+  //   word-break: keep-all;
+  // }
+
+  .container {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  // .logo {
+  //   margin-top: css-min(40px, vw(40));
+  //   display: block;
+  //   width: css-min(692px, vw(692));
+  //   height: css-min(77px, vw(77));
+  //   background: url(../images/inc/footerlogo.png) no-repeat;
+  //   background-size: contain;
+  // }
+}

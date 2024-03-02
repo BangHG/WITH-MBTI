@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+  <? include "inc/head.html" ?>
+
+  <body class="page page__result">
+    <main class="main">
+      <section>
+        <div class="container">
+          <h1 class="page__result__title">나의 생존유형은?</h1>
+          <div id="result" class="result"></div>
+          <a class="popup-link" href="#" data-popup="popup__allType" title="전체유형보기">전체 유형 보기</a>
+        </div>
+      </section>
+    </main>
+
+    <section class="app-download">
+      <div class="container">
+        <div class="app-download__banner">
+          <h3 class="app-download__title">WITH 플레이하기</h3>
+          <div class="app-download__wrap">
+            <a href="https://play.google.com/store/apps/details?id=com.gravity.with.aos" title="Google Play에서 다운로드" target="_blank">
+              <img src="../assets/images/result/bannerOpen/app-download-aos.png" alt="Google Play에서 다운로드" />
+            </a>
+            <a href="https://apps.apple.com/kr/app/with-whale-in-the-high/id6446757241" title="App Store에서 다운로드" target="_blank">
+              <img src="../assets/images/result/bannerOpen/app-download-ios.png" alt="App Store에서 다운로드" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="result__bottom">
+      <div class="container">
+        <h3 class="title">결과 공유하기</h3>
+        <? include "inc/share-sns.html" ?>
+        <div class="btn-wrap">
+          <a href="test.html" class="btn">다시하기</a>
+          <a id="download-result" href="#" download class="btn">결과 저장하기</a>
+        </div>
+      </div>
+    </section>
+
+    <? include "inc/footer.html" ?>
+
+    <span class="blind"></span>
+
+    <aside class="popup popup__allType">
+      <div class="popup__head">
+        <h2 class="title">전체 유형 보기</h2>
+        <button type="button" class="close" title="닫기 버튼" onclick="closed_popup()"></button>
+      </div>
+      <div class="popup__body">
+        <div class="popup__scroll">
+          <ul id="allType" class="all-type-list"></ul>
+        </div>
+      </div>
+    </aside>
+  </body>
+
+  <script src="../assets/js/result.js"></script>
+  <script src="js/common.min.js"></script>
+</html>

@@ -1,0 +1,487 @@
+﻿{
+  "text": {
+    "survive": {
+      "probability": {
+        "ko": "생존확률",
+        "en": "Survival probability",
+        "ja": "生存率"
+      },
+      "resource_gethering": {
+        "ko": "필요한 도구 제작 및 자원 조달 확률",
+        "en": "Stable resource gathering",
+        "ja": "資源確保率"
+      },
+      "self_defense": {
+        "ko": "위험으로부터 스스로 보호할 확률",
+        "en": "Self-defense",
+        "ja": "自己防衛率"
+      },
+      "rescuability": {
+        "ko": "구조대원에게 발견될 확률",
+        "en": "Rescuability",
+        "ja": "救助可能性"
+      }
+    },
+    "match": {
+      "best": {
+        "ko": "잘맞는 궁합",
+        "en": "Good Match",
+        "ja": "相性(^_^)"
+      },
+      "worst": {
+        "ko": "안맞는 궁합",
+        "en": "Bad Match",
+        "ja": "相性(=_=)"
+      }
+    }
+  },
+  "type": [
+    {
+      "id": 1,
+      "mbti": "ISTJ",
+      "definition": {
+        "ko": "무인도에서도 <br>여전한 안정성 추구형",
+        "en": "Stability seeker even on a deserted island",
+        "ja": "無人島でも変わらない安定性追求型"
+      },
+      "survive": {
+        "probability": "75%",
+        "resource_gethering": "85%",
+        "self_defense": "60%",
+        "rescuability": "75%"
+      },
+      "survive_title": {
+        "ko": "무인도에서도 차분하게 계획을 세워나가는게 중요하지~",
+        "en": "It's important to calmly make plans",
+        "ja": "無人島でも冷静に計画を<br>立てていくことが重要だね。"
+      },
+      "survive_desc": {
+        "ko": "<li><b>주변 지형 파악은 물론 식량 파악까지!</b> 주변 지형을 파악했으니 땅 위에 지도를 그려놔야겠어! 여기에 바나나나무가 있고 여기에 코코넛나무가 있었지. 체크! 식량은.. 음.. 오늘 바나나를 10개 따왔으니 5개는 지금 먹고 3개는 저녁에 먹어야겠군. 2개는 미래를 위해 저장해둬야겠어. 내일은 낚시대를 만들어서 낚시를 해봐야겠다.</li><li> <b>그나저나 여기 꽤 괜찮은데?</b> 먹을 물도 있고 식량도 꽤 많아서 안정적으로 살 수 있겠어. 매일매일 변화하는 도시보다는 어쩌면 여기 사는 게 나을지도?<span class='d-inline-block'>ㄟ( ▔, ▔ )ㄏ</span></li>",
+        "en": "<li><b>Understanding the surroundings and getting food! </b>Now that I have surveyed the terrain, I should draw a map! As for food, I gathered 5 bananas today, so I will eat 3 now and 2 for dinner.</li><li><b>By the way, this place seems quite nice, right?</b> Maybe living here could be better than in a city where things change every day? <span class='d-inline-block'>ㄟ( ▔, ▔ )ㄏ</span></li>",
+        "ja": "<li><b>周囲の地形はもちろん、無人島の地図を描かなきゃ。</b>食料も確保しないと～！あ！バナナの木発見！5つ取れたので2つは今、3つは夕食にしよ～っと。</li><li><b>でもここはイイなぁ。</b>さわがしい都会よりここに住みたいかも～！<span class='d-inline-block'>ㄟ( ▔, ▔ )ㄏ</span></li>"
+      },
+      "match_survive": "9",
+      "match_drift": "3"
+    },
+
+    {
+      "id": 2,
+      "mbti": "ISFJ",
+      "definition": {
+        "ko": "바리바리 <br>보부상",
+        "en": "Always pack your luggage (Bring everything you can)",
+        "ja": "心配性で<br>大荷物の旅人"
+      },
+      "survive": {
+        "probability": "80%",
+        "resource_gethering": "100%",
+        "self_defense": "70%",
+        "rescuability": "70%"
+      },
+      "survive_title": {
+        "ko": "나는야 바리바리 보부상! <br>늘 가방에 모든 걸 넣어놓고 다니지<span class='d-inline-block'>O(∩_∩)O</span>",
+        "en": "I always carry everything in my bag <span class='d-inline-block'>O(∩_∩)O</span>",
+        "ja": "いつもバッグにすべてを<br>詰め込んで歩いているよ<span class='d-inline-block'>O(∩_∩)O</span>"
+      },
+      "survive_desc": {
+        "ko": "<li><b>걱정이 많은 완벽주의자라 늘 가방 속은 도라에몽 주머니!</b> 없는 게 없다고~ 아니 이런, 무인도 생활에 꼭 필요한 필수품들이 가방 속에 다 있네..? 물, 가스버너, 텐트, 구급약 등등 다 있다고~ 근데.. 여기서 어떻게 탈출하지..?</li><li> <b>내 탈출 계획엔 완벽함이 필요해..!</b> 나는 가방 속에 있는 파라솔을 이용해서 바람을 타고 탈출한다! 일기로 기록해둬야지.. (일기장을 꺼낸다.. 주섬주섬) 근데 도착한 곳이 또 무인도면 어떡하지?</li>",
+        "en": "<li><b>I always bring everything!</b> Water, a gas burner, a tent, and more. But... how do I escape from here?</li><li><b>My escape plan requires perfection...!</b> I'll use the parasol to ride the wind and escape! I should write it down in my diary... (takes out a diary... and starts writing).</li>",
+        "ja": "<li><b>心配性の完璧主義者なので</b>水、ガスバーナー、テントなど、無人島の必需品はぜーんぶ詰め込んで来たのだ～！でも、どうやって脱出しようかな….</li><li><b>脱出計画には完璧さが必要！</b>よーしパラソルを利用して風に乗って脱出しよ！日記に記録しておかないとね..（日記帳を取り出す..）</li>"
+      },
+      "match_survive": "10",
+      "match_drift": "4"
+    },
+
+    {
+      "id": 3,
+      "mbti": "INFJ",
+      "definition": {
+        "ko": "생각 많은 <br>시뮬레이터",
+        "en": "Thoughtful simulator",
+        "ja": "思慮深い<br>シミュレーター"
+      },
+      "survive": {
+        "probability": "70%",
+        "resource_gethering": "50%",
+        "self_defense": "90%",
+        "rescuability": "70%"
+      },
+      "survive_title": {
+        "ko": "모든 일은 실행 전에 시뮬레이션이 필요해!",
+        "en": "Every task requires a simulation before execution!",
+        "ja": "すべてのことは実行前に<br>シミュレーションが必要なんだ！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>(고래 등에서 살아남는 법에 꽂혀서 그것만 생각함)</b> 어떤 방법으로 탈출하지? 낙하산을 사용해보자. 낙하산을 뭘로 만들지? 음.. 갖고있는 옷을 엮어볼까? 풀리면 어떡하지? 한번 시뮬레이션을 돌려서 어떻게 할지 정해보자. 낙하산이 잘 작동 안한다면? 육지가 보이면 근처 바다로 뛰어.. </li><li> <b>어 뭐야.. 잠깐만.. 게 두마리가 싸우고 있잖아?</b> 앗 한 마리가 일방적으로 당하고 있네? 저건 싸움이 아니라 괴롭힘인 것 같아. 괴롭힘이라니 참을 수 없어!!!!! 두 마리를 떼어놓고 말거야 (갑자기 다른 데에 정신 팔림)</li>",
+        "en": "<li><b>(Obsessed with surviving)</b> How should I escape? Let me use a parachute. How can I make one? Maybe I can weave it using the clothes I have. What if it unravels? I should simulate it and decide what to do.</li><li><b>Oh, wait... What's happening? Those two crabs are fighting!</b> Oh no, one of them is getting hit. That doesn't seem like a fair fight. I can't stand it!! I'll separate the two. (Distracted)</li>",
+        "ja": "<li><b>(脱出方法に夢中でそれしか考えていない)</b> パラシュートを作る？服を編んでみる？シミュレーションしてどうするか決めよう！</li><li><b>なんだよ..あのゲーム、二匹の争いじゃん？</b>一匹が一方的に攻撃されてるじゃん？それは争いじゃなくていじめだよ！！二匹を引き離さなきゃだよ</li>"
+      },
+      "match_survive": "11",
+      "match_drift": "1"
+    },
+
+    {
+      "id": 4,
+      "mbti": "INTJ",
+      "definition": {
+        "ko": "허당끼 있는<br> 전략가",
+        "en": "Strategist with a touch of foolishness",
+        "ja": "お調子者の戦略家"
+      },
+      "survive": {
+        "probability": "90%",
+        "resource_gethering": "100%",
+        "self_defense": "80%",
+        "rescuability": "90%"
+      },
+      "survive_title": {
+        "ko": "내 의지와 똑똑한 머리가 있다면 혼자여도 무서울 게 없지!",
+        "en": "With my determination and smarts, I fear nothing!",
+        "ja": "意志と頭の良ささえあれば、<br>一人でも怖くないよ！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>음.. 여기서 며칠 버틸 수 있을지, 어떻게 탈출할지 생각해봐야겠군.</b> 현재 물은 6L를 갖고있으니 5일간 나눠마시고 그 사이에 증류수 만드는 방법을 연구해야겠다. 빵은 10개 있으니 3일은 버틸 수 있겠군</li><li> <b>구조대원에게 발견될 수 있게 조개를 모아 SOS를 크게 써보자.</b> 난 역시 똑똑해 훗.. (그리고 조개 가지러 나갔다가 길 잃음)</li>",
+        "en": "<li><b>I need to think about how long I can survive here and how to escape. </b>I have 6 liters of water, so I can divide it and drink it over 5 days. In the meantime, I should research how to distill water</li><li><b>Smart but gets lost frequently</b>I'll gather shells to write a large SOS sign in the hopes of being spotted by a rescue team. I'm smart! (then gets lost while collecting shells)</li>",
+        "ja": "<li><b>今、水が6Lあるから5日間で分けて飲むことにしよう。</b>その間に蒸留水の作り方を研究しないとな。パンは10個あるから3日は持ちそう。</li><li><b>貝を集めてSOSで書いてみるか。</b>やっぱりオレ賢いからねっ<span class='d-inline-block'>（貝を取りに行ったら迷子になった)</span></li>"
+      },
+      "match_survive": "12",
+      "match_drift": "2"
+    },
+
+    {
+      "id": 5,
+      "mbti": "ISTP",
+      "definition": {
+        "ko": "무인도 적응력 <br>만렙",
+        "en": "Master of adaptation on the deserted island",
+        "ja": "無人島適応力マックス"
+      },
+      "survive": {
+        "probability": "10%",
+        "resource_gethering": "25%",
+        "self_defense": "00%",
+        "rescuability": "05%"
+      },
+      "survive_title": {
+        "ko": "소음도 없고 적도 없는 이 곳은.. 혹시 지상낙원?",
+        "en": "No noise or enemies in this place... Could it be paradise?",
+        "ja": "騒音もなく敵もいないこの場所は...もしかして楽園？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>이렇게나 조용하고 평온하다니.. 여기는 내가 찾던 곳인데?</b> 일단 배터리 나갈 때까지 다운로드 받은 넷플릭스 영화나 좀 보자. 딱히 탈출할 생각이 안드네... 혼자 조용한 곳에 있는 거 오히려 좋아</li><li> <b>슬슬 배가 고프니 일단 나무 주워다가 필요한 도구나 만들어야겠다.</b> 창으로 물고기 잡아서 구워 먹어야지~ 아 평화로워</li>",
+        "en": "<li><b>It's so peaceful and serene here. This is the kind of place I've been looking for.</b> I'll just watch some movies that I downloaded until the battery runs out. I don't really feel like escaping... </li><li><b>I'm getting hungry, so I'll gather some wood and make some tools.</b> I'll spear fish and grill them on the fire.</li>",
+        "ja": "<li><b>なんて静かなんだろう..ここがオレの探していた場所。</b>とりあえずバッテリーが切れるまでMetflixの映画でも！一人で静かな場所にいるの好きなんだよねー。</li><li><b>お腹がすいたな～。木で何か道具を作ろうかな。</b>まず魚を捕まえて焼いて食べよう〜♪平和だな～</li>"
+      },
+      "match_survive": "13",
+      "match_drift": "15"
+    },
+
+    {
+      "id": 6,
+      "mbti": "ISFP",
+      "definition": {
+        "ko": "섬돌이, 섬순이 <br>(무인도 탈출 의지 0)",
+        "en": "Zero will to escape from a deserted island",
+        "ja": "島っ子、生粋の島好き（脱出意志0）"
+      },
+      "survive": {
+        "probability": "0%",
+        "resource_gethering": "00%",
+        "self_defense": "00%",
+        "rescuability": "00%"
+      },
+      "survive_title": {
+        "ko": "우와 감성 가득 무인도잖아~ <br>잠깐 핸드폰은 꺼둘까",
+        "en": "An island! I'm full of emotions~ Maybe I should turn off my phone",
+        "ja": "わぁ、感動的な無人島だよ〜<br>ちょっと、携帯電話を切っておこうかな"
+      },
+      "survive_desc": {
+        "ko": "<li><b>엇 나 고래 등 위로 떨어진건가..</b> 음 그렇다면 여기서 어떻게 탈출할건지 생각해봐야겠군.</li><li> <b>근데 여기 파스텔 톤이라 엄청 예쁘다..</b> 완전 감성 가득이네 (✿◡‿◡) 어쩜 이렇게 예쁜 색으로 구성돼있을까. 아 탈출 계획은 귀찮으니까 조금 이따 생각하고, 조금만 누워서 경치 구경 해야겠다. 이렇게 자연 속에 누워있으니 안락해~! </li>",
+        "en": "<li><b>Oh, I fell onto a whale's back... </b>Well then, I should think about how to escape from here.</li><li><b>But this pastel-toned place is so beautiful...<span class='d-inline-block'>(✿◡‿◡)</span></b> How can it be made up of such pretty colors? Ah, I can't be bothered, so I'll think about escape later. For now, I'll lie down and enjoy the view. </li>",
+        "ja": "<li><b>無人島に落ちたのかなぁ..？</b>う～ん、どうやって脱出するか考えないと。</li><li><b>でもすごく綺麗だな..感性に溢れているわ </b><span class='d-inline-block'>(✿◡‿◡)</span> 脱出を考えるのは面倒だから、ちょっとだけ寝転んで景色を眺めちゃお～。計画は後で！</li>"
+      },
+      "match_survive": "14",
+      "match_drift": "8"
+    },
+
+    {
+      "id": 7,
+      "mbti": "INFP",
+      "definition": {
+        "ko": "이 구역의 TMT <br><span style='letter-spacing:-0.1em;white-space:nowrap'>(Too Much Thinker)</span>",
+        "en": "OTT <span style='letter-spacing:-0.1em;white-space:nowrap'>(Overly Thoughtful Thinker)</span>",
+        "ja": "思考がとまらない！"
+      },
+      "survive": {
+        "probability": "5%",
+        "resource_gethering": "10%",
+        "self_defense": "00%",
+        "rescuability": "05%"
+      },
+      "survive_title": {
+        "ko": "생각을 멈추려고 해도 멈출 수가 없잖아! <br>무인도에서도 끊이지 않는 의식의 흐름,, 생각의 마인드맵,,",
+        "en": "Even when I try to stop thinking, it's impossible to stop!",
+        "ja": "考えを止めようとしても<br>止まらないよね！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>아마 사람들은 내가 사라진 것도 모르겠지?</b> 나중에 '고래 등 위의 방랑자'라고 뉴스에 나오면 어떡하지? 당황스러울 것 같아.. 사진도 찍히면 어떡하지? 그럼 유명해지는 건가?ㅎㅎ 인터뷰 하게 되면 어떤 옷 입어야되지? </li><li> <b>아 생각 그만하고! 일단 섬 구경이나 해볼까? 여기 진짜 예쁘다!</b> 잠시 코코넛 나무에 등 대고 앉아야겠다. 무인도에서 나가면 뭐 하고 살지? 일을 열정적으로 해서 돈을 많이 벌고 싶은 생각은 딱히 없는데.. 혼자 할 수 있는 일 없나? 흠.. 나는 뭘 잘 하지?</li>",
+        "en": "<li><b>Perhaps people wouldn't realize that I've disappeared?</b> What if they see me on the news as the 'Wanderer on a Whale's Back'? Would I become famous? Hehe, what should I wear for interviews?</li><li><b>Ah, stop thinking about strange things!</b> Let me just enjoy exploring the island for now. I should sit back against the coconut tree for a moment. What would I do once I leave the deserted island? I don't have a strong desire to work passionately and earn a lot of money. Hmm... What am I good at?</li>",
+        "ja": "<li><b>多分みんな私がいなくなったことに気づいてないよね？</b>ニュースにでるかなぁ？有名になるかなぁ？笑 インタビューの時に服は何着よう～！？</li><li><b>考えるのはヤメにしてちょっとココナッツの木に腰かけて…。</b>無人島から出た後は何をして生きていくか？お金をたくさん稼いで大金を得たいわけじゃないけど..わたし何をすればいいのかしら？</li>"
+      },
+      "match_survive": "15",
+      "match_drift": "5"
+    },
+
+    {
+      "id": 8,
+      "mbti": "INTP",
+      "definition": {
+        "ko": "똑똑한 <br>길치",
+        "en": "Smart navigator with no sense of direction",
+        "ja": "頭のいい方向音痴"
+      },
+      "survive": {
+        "probability": "85%",
+        "resource_gethering": "100%",
+        "self_defense": "85%",
+        "rescuability": "70%"
+      },
+      "survive_title": {
+        "ko": "무인도? 내 지식으로 충분히 빠져나가지~ 식은 죽 먹기! <br>근데 여기 어디지? 내가 방금 어디서 왔더라?",
+        "en": "I have enough knowledge to escape easily! Piece of cake! But wait, where am I? Where did I just come from?",
+        "ja": "無人島？私の知識で十分に<br>脱出できるよ〜 でも、ここはどこだっけ？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>훗, 이제부터 내 지식을 뽐내볼까나.</b> 일단 증류수부터 만들어야겠다. 물을 퍼와서 끓여야겠어. 끓이려면 불이 필요하겠군. 그렇다면 갖고 있는 카메라 볼록렌즈를 사용해야겠다. 난 역시 다른 사람들과 달라! 그럼 먼저 나뭇가지를 주워올까?</li><li> <b>스스로 길치라는 사실을 까먹음 </b>(20분 정도 걷는다) 오 여기에 쓸만한 나뭇가지가 많은걸? 아주 좋아, 이제 돌아가야지. 어 잠깐만.. 나 어디에서 왔더라? 어느 방향이었지? 여기였나? 아닌데.. 이 풍경은 처음 보는데.. 내 가방이랑 소지품 다 거기 있는데 어떡하지..</li>",
+        "en": "<li><b>Hehe, now I can show off my knowledge.</b> First, I should make distilled water. I need to collect water and boil it. To make fire, I should use the convex lens from my camera. I'm truly different than others!</li><li><b>(Walks for about 20 minutes)</b> Oh, there are plenty of suitable tree branches here! Excellent! Wait... Where did I come from? Which direction was it? Oh... What should I do?</li>",
+        "ja": "<li><b>えっへん！私の知識を披露しちゃう！</b>まずは水を運んで蒸留水を。そしてカメラの凸レンズで火をおこす。やっぱりわたし天才！それから枝を拾って来なくては！</li><li><b>(約20分歩く)</b> たくさん拾ったからそろそろ戻るか～！あれ？ちょっと待って..私さっきどこから来たんだっけ？どっちの方角だったっけ？えー！</li>"
+      },
+      "match_survive": "16",
+      "match_drift": "6"
+    },
+
+    {
+      "id": 9,
+      "mbti": "ESTP",
+      "definition": {
+        "ko": "로빈슨 크루소를<br> 뛰어넘는 야망가",
+        "en": "Ambitious beyond Robinson Crusoe",
+        "ja": "ロビンソンクルーソーを<br>超える野心家"
+      },
+      "survive": {
+        "probability": "60%",
+        "resource_gethering": "40%",
+        "self_defense": "80%",
+        "rescuability": "60%"
+      },
+      "survive_title": {
+        "ko": "무인도? 아마 내가 로빈슨 크루소보다 잘 살아남을걸?",
+        "en": "Deserted island? <br>Perhaps I'll survive better <br>than Robinson Crusoe.",
+        "ja": "おそらく私はロビンソン・クルーソーよりもうまく生き残ることができるんじゃないかな？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>고래 등? 난 당연히 탈출할 수 있지~</b> 솔직히 내가 못 하는 것도 있나? 먼저 나뭇가지랑 나뭇잎 엮어서 비 안새는 집부터 만들어야겠다. 무인도에 떨어져도 똑똑하면 산다니까~ 어 뭐야, 이 나뭇가지 뾰족해서 물고기 잡기 좋겠다. 지금 물고기 10마리 잡으러 가야지!</li><li> <b>여기 내가 처음 발견한 거 아닌가? </b>깃발 꼽고 섬에 내 이름 붙여야겠다. 이 섬에 어떤 천연자원이 있을지 몰라! 나중에 천연자원 조사 다 끝나면 경매 붙여서 팔아야겠다. 벌써부터 구미가 당기는걸?</li>",
+        "en": "<li><b>Whale's back? Of course, I can escape for sure! </b>Is there anything I can't do? I have to weave branches and leaves to make a shelter, first of all. Well... oh, look! This branch is pointed, perfect for catching fish. I need to go catch 10 fish right now!</li><li><b>Am I the first one who discovered this place?</b> I should plant a flag and name the island after myself. I should put this up for auction haha</li>",
+        "ja": "<li><b>何ココくじらの背中？無人島？まあでも脱出はできるわね！</b>私にできないことなんて無いからね～！まずは家作ろうかな！あれ、何だ、このとんがっている枝は！？魚を捕まえるのに丁度良さそうだから魚を10匹捕まえに行こ～っと！(あれ…家は？)</li><li><b>ここが私が世界初に発見した島ね！</b>島に私の名前を付けなきゃ。オークションで高値で売れそう〜！</li>"
+      },
+      "match_survive": "1",
+      "match_drift": "11"
+    },
+
+    {
+      "id": 10,
+      "mbti": "ESFP",
+      "definition": {
+        "ko": "무인도는 나를 담기엔 <br>너무 작아",
+        "en": "The island is too small to contain me",
+        "ja": "無人島は<br>私には狭すぎる"
+      },
+      "survive": {
+        "probability": "30%",
+        "resource_gethering": "40%",
+        "self_defense": "10%",
+        "rescuability": "40%"
+      },
+      "survive_title": {
+        "ko": "심심한 건 딱 질색인데..!! 여기서는 인스타도 안되고.. <br>기왕 여기 있는 김에 캠프파이어나 해볼까?",
+        "en": "Boredom is the worst...!! <br> No social media here... <br> Maybe I should try <br> making a campfire.",
+        "ja": "退屈は大嫌いだけど...!! <br>ここにいるなら<br>キャンプファイヤーで<br>もやってみようかな？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>이곳에 혼자 갇혔다니.. 심심하고 답답해..</b> 이대로 영원히 살아야 하는 건 아니겠지? 그건 최악이야. 분위기 전환을 위해서 캠프파이어나 해볼까? 이런 곳 오면 꼭 하고 싶었단 말이야~ 우와 따듯한 불 쬐니까 긍정의 힘이 올라와~!! 탈출할 수 있을 것 같아!!!</li><li> <b>그래~ 좋은 게 좋은 거지~<span class='d-inline-block'>ヽ(✿ﾟ▽ﾟ)ノ</span></b>근데 이렇게 무인도에 갇혀있으니 기분이 다운되네. 심심하니까 주위나 한번 둘러봐야겠어! 이런 곳에 와있는 것도 경험이니까 사진 많이 찍어놔야지~ </li>",
+        "en": "<li><b>Being trapped alone in this place...</b> it's boring and frustrating. Maybe I should try making a campfire to change the atmosphere? It's something I've always wanted to do when coming to a place like this. Wow, basking in the warm fire makes me feel more positive! I feel like I can escape!!!</li><li><b>Good things are always good, right? <span class='d-inline-block'>ヽ(✿ﾟ▽ﾟ)ノ</span></b> But being stuck on this deserted island is bringing me down. Since I'm bored, I should explore the surroundings and take lots of pictures~ Good things are always good! </li>",
+        "ja": "<li><b>無人島は退屈～！</b>キャンプファイヤーでもやって気分転換しようかな！？わー、暖かい火にあたるとポジティブな力が湧いてくる～！！脱出できそう！</li><li><b>退屈だから探検してみよ～！</b>めったに来れないからたくさん写真撮ろ！ステキすぎ〜<span class='d-inline-block font-family-sub'>ヽ(✿ﾟ▽ﾟ)ノ</span></li>"
+      },
+      "match_survive": "2",
+      "match_drift": "12"
+    },
+
+    {
+      "id": 11,
+      "mbti": "ENFP",
+      "definition": {
+        "ko": "내 세계의<br> 주인공",
+        "en": "The protagonist of my own world",
+        "ja": "私の世界の主人公"
+      },
+      "survive": {
+        "probability": "20%",
+        "resource_gethering": "25%",
+        "self_defense": "10%",
+        "rescuability": "25%"
+      },
+      "survive_title": {
+        "ko": "고래 등에 표류하게 되다니.. 설마 나 혹시 영화 속 주인공?<br>아냐아냐! TV 프로그램 속 몰래카메라 주인공이 된 건 아닐까? ",
+        "en": "Being stranded on a whale's back... <br>maybe I'm on a hidden camera show?",
+        "ja": "クジラに漂流してしまうなんて...<br>もしかして 私、テレビ番組の主人公になったのかな？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>(어리둥절) 앗 내가 무인도에?</b> 너무 신기하잖아! 여기저기 둘러볼까? 오! 일단 인증샷부터 찍어보자! 나중에 사람들한테 자랑해야지 크크. 혹시 TV 프로그램에서 지금 날 상대로 몰래카메라를 찍고 있는거 아니야? </li><li> <b>뭐야 귀여운 고양이잖아<span class='d-inline-block'>o((>ω< ))o</span> </b>고양이 한 마리면 이 시련도 벗어날 수 있을 것 같아! 야옹아 안녕~? 너 여기 사니? 우리 친구할래?</li>",
+        "en": "<li><b>(Perplexed) Wait, I'm on a deserted island?</b> It's so fascinating! Should I wander around here? Oh, first, let me take a selfie as proof! I'll brag about it later to people, hehe. Is it possible that I'm secretly being filmed by a hidden camera for a TV show?</li><li><b>Aww, you're such a cute cat! <span class='d-inline-block'>o((>ω< ))o</span> </b> Maybe having a cat here will help me overcome this ordeal! Hello, meow~ Are you living here? Let's be friends!</li>",
+        "ja": "<li><b>あれ？ここ無人島！？</b>Wow最高！まずは自撮して自慢しなきゃ～。これってもしかしてリアリティショーに出演しちゃってる？</li><li><b>わ～ｶﾜ(・∀・)ｲｲ!! ニャンニャンこんにちは〜！</b>ここに住んでるの？友達になろうよ～！</li>"
+      },
+      "match_survive": "3",
+      "match_drift": "9"
+    },
+
+    {
+      "id": 12,
+      "mbti": "ENTP",
+      "definition": {
+        "ko": "게으른 완벽주의<br> 탈출러",
+        "en": "Lazy perfectionist escaper",
+        "ja": "怠け者で完璧主義のエスケーパー"
+      },
+      "survive": {
+        "probability": "40%",
+        "resource_gethering": "40%",
+        "self_defense": "70%",
+        "rescuability": "10%"
+      },
+      "survive_title": {
+        "ko": "둘 중 하나! 열심히 탈출 방법을 찾거나 한나절 내내 누워있거나",
+        "en": "One of the two! Either searching for an escape plan or spending the whole day lying down.",
+        "ja": "どちらか！<br>一生懸命に脱出方法を見つけるか、一日中横になるか"
+      },
+      "survive_desc": {
+        "ko": "<li><b>나는 나만의 방식으로 살아남을거야!</b> 일반적으로 알려진 생존 방법 대신 나만의 방법을 연구하는 나 <span class='d-inline-block'>（￣︶￣）↗</span> (브레인스토밍 하며 방법을 하나씩 떠올리는데) 어머 내 방법 꽤나 괜찮잖아? 후후, 내가 고래 등을 탈출한 산 증인이 되겠어! 두고 봐</li><li> <b>음 근데 좀 귀찮다..</b> 일단 코코넛 나무 위에 올라가서 누워있을래~ 조금 이따 생각하자~ (마음에 걸리는데 일단 쉼)</li>",
+        "en": "<li><b>I will survive in my own way!</b> Instead of following the commonly known survival methods, I'll research my own methods<span class='d-inline-block'>（￣︶￣）↗</span> (Brainstorming and coming up with ideas one by one.) Oh, my methods seem quite good, don't they? Hehe, I'll become the survivor who escaped on a whale's back! Just watch me.</li><li><b>Hmm, but it's a bit bothersome...</b> For now, I'll climb up the coconut tree and lie down~ Let me think about it later~ (Feeling not good, but taking a break for now)</li>",
+        "ja": "<li><b>自分のやり方で脱出だー！<span class='d-inline-block'>（￣︶￣）↗</span> </b>(アイデアがザックザク！)おっ、この方法なかなかいいじゃん！フフ、私が無人島から脱出した生き証人になれそう！</li><li><b>でもちょっと面倒になってきた..</b>考えるのは後回し！ココナッツの木のうえで昼寝するか～（気になるけど…まずは!Zzz…寝)</li>"
+      },
+      "match_survive": "4",
+      "match_drift": "10"
+    },
+
+    {
+      "id": 13,
+      "mbti": "ESTJ",
+      "definition": {
+        "ko": "무인도 파이터는<br> 나야 나!",
+        "en": "I am the fighter of the deserted island!",
+        "ja": "無人島の<br>ファイター！"
+      },
+      "survive": {
+        "probability": "100%",
+        "resource_gethering": "100%",
+        "self_defense": "100%",
+        "rescuability": "100%"
+      },
+      "survive_title": {
+        "ko": "무인도야! 네가 이기나 내가 이기나 해보자!",
+        "en": "Let's see who wins, <br>you or me! <br>Come on, deserted island!",
+        "ja": "無人島だよ！君が勝つか、<br>私が勝つか、試してみよう！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>내 목표는 고래 등 탈출!</b> 이 곳을 탈출하기 전까지는 다른 어떤 것도 신경 쓰지 않는다. 아름다운 자연? 경치? 관심없어. 나의 목표는 오로지 살아남는 것 <span class='d-inline-block'>(* ￣︿￣)</span></li><li> <b>어느새 먹을 것부터 찾아 모으고 있는 나.</b> 부지런해야 살아남는다! 정신차리라고! </li>",
+        "en": "<li><b>My goal is to escape on a whale's back!</b> Until I escape this place, I won't care about anything else. Beautiful nature? Scenic views? Not interested. My only focus is surviving <span class='d-inline-block'>(* ￣︿￣)</span></li><li><b>I must be diligent to survive!</b>Without realizing it, I find myself searching for and collecting things to eat. I must be diligent to survive! Snap out of it!</li>",
+        "ja": "<li><b>私の目標は無人島から脱出すること！</b>脱出するまではキレイな景色なんて見ない見ない！生き延びるのことに集中！ <span class='d-inline-block'>(* ￣︿￣)</span></li><li><b>いつの間にか食べ物を探している自分がいる。</b>いやこれは生き延びるために必要だ！よしとりあえず食べよう！</li>"
+      },
+      "match_survive": "5",
+      "match_drift": "7"
+    },
+
+    {
+      "id": 14,
+      "mbti": "ESFJ",
+      "definition": {
+        "ko": "긍정과 걱정의<br> 집합체",
+        "en": "A fusion of positivity and worry",
+        "ja": "ポジティブな<br>リスクテイカー"
+      },
+      "survive": {
+        "probability": "65%",
+        "resource_gethering": "70%",
+        "self_defense": "70%",
+        "rescuability": "55%"
+      },
+      "survive_title": {
+        "ko": "걱정되는 부분이 믾긴 하지만 잘 해나갈 수 있을 것 같아!",
+        "en": "I have some concerns, but I think I can handle it well!",
+        "ja": "心配な部分はあるけど、<br>うまくやっていけそうだよ！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>아 내가 고래 등 위에 혼자 표류하고 있다니...</b> 이럴 때 누구라도 같이 있으면 좋을텐데... 이렇게 어려운 상황에 내가 혼자.. 살 수 있을까? 아니야 호랑이굴에 잡혀가도 정신만 차리면 사는걸! 살 수 있지~  집 짓고 먹을 것 좀 구해보고, 섬 좀 돌아봐야겠다. 근데 갑자기 위험한 야생동물이 나타나면 어떡하지?</li><li> <b>여기서는 날 챙길 사람이 나밖에 없으니 나라도 스스로 잘 챙겨보자.</b> 그동안은 눈치보며 다른 사람 챙기느라 정작 날 못 돌봤잖아. 살아 나갈 수 있다!</li>",
+        "en": "<li><b>Oh, being stranded alone on a whale's back...</b> It would be nice if someone could be with me... Can I really survive in such a difficult situation all by myself? No, even if I'm trapped in a tiger's den, as long as I keep my wits about me, I can survive! I should build a shelter and gather some food, and explore the island. But, what if dangerous wild animals suddenly appear?</li><li><b>I'm the only one who can take care of myself</b> Since there's no one else here to take care of me, I should take care of myself.</li>",
+        "ja": "<li><b>こんな困難な状況で一人で生き残れるのか？</b>大丈夫、虎の穴に閉じ込められても気持ちを切り替えれば生きていける！でも突然危険な野生動物が現れたらどうしよう？</li><li><b>ここでは助けてくれる人はいないから自分を守らなくちゃ！</b>そしたら生きていけそう！あれ、でも案外住み心地が良さそうな気がする～！</li>"
+      },
+      "match_survive": "6",
+      "match_drift": "16"
+    },
+
+    {
+      "id": 15,
+      "mbti": "ENFJ",
+      "definition": {
+        "ko": "<span style='letter-spacing:-0.07em;white-space:nowrap'>[고래 등에서 살아남기]</span> <br>저자",
+        "en": "Author of &#x22;Surviving on a Whale's Back&#x22;",
+        "ja": "『無人島(かと思ったら<br>くじらの背中だった)<br>から 生き残る』の著者"
+      },
+      "survive": {
+        "probability": "50%",
+        "resource_gethering": "60%",
+        "self_defense": "40%",
+        "rescuability": "50%"
+      },
+      "survive_title": {
+        "ko": "괜찮아! 나무에 나를 묶어서 바람이 거셀 때 탈출 시도 해보자!<br>탈출하면 내가 겪은 일을 책으로 써서 알려야겠어!",
+        "en": "It's okay! Let me escape! Once I escape, I'll write a book about my experience.",
+        "ja": "大丈夫！<br>どうにかして <br>脱出を試してみよう！<br>脱出したら、<br>私の体験記を書かなくちゃ！"
+      },
+      "survive_desc": {
+        "ko": "<li><b>무인도에서도 긍정의 힘을 발휘하는 나 자신 <span class='d-inline-block'>(●'◡'●)</span></b> 너무 슬퍼할 필요 없어~ 탈출할 수 있으니까! 돌아다니면서 지리부터 파악하고 쓸모 있는 물건이나 음식 좀 모아보자! (며칠 후) 아무것도 못찾고 거지꼴로 돌아온 나..</li><li> <b>그래, 결심했어! 책을 쓰자</b> 내가 겪은 어려움을 다른 사람도 겪을지 몰라. 책으로 써서 도와야겠어! 제목은 [고래 등에서 살아남기]</li>",
+        "en": "<li><b>I, myself, will exert the power of positivity even on this deserted island <span class='d-inline-block'>(●'◡'●)</span></b>There's no need to be so sad~ I can escape! Let's wander around and get familiarized with the geography, and gather useful items and food! (A few days later) I returned with nothing while looking like a beggar...</li><li><b>Yes, I've made up my mind! </b>Others may face the same hardships as me. I should write a book to help them! The title will be 'Surviving on a Whale's Back.'</li>",
+        "ja": "<li><b>無人島でもポジティブな私<span class='d-inline-block'>(●'◡'●)</span> </b>寂しくても泣いたりしない〜 周りを歩き回って地形を観察して食べ物を集めよう！ (数日後)何も見つからずに戻ってきた私…（泣）</li><li><b>よし！</b>このとっても大変な経験を本にして他の人を助けるんだ！タイトルは『無人島（かと思ったらくじらの背中だった）から生き残る』だよ</li>"
+      },
+      "match_survive": "7",
+      "match_drift": "13"
+    },
+
+    {
+      "id": 16,
+      "mbti": "ENTJ",
+      "definition": {
+        "ko": "코코넛 사업<br> CEO",
+        "en": "CEO of the Coconut Business",
+        "ja": "ココナッツビジネス<br>CEO"
+      },
+      "survive": {
+        "probability": "95%",
+        "resource_gethering": "100%",
+        "self_defense": "85%",
+        "rescuability": "100%"
+      },
+      "survive_title": {
+        "ko": "무인도엔 탈출 옵션만 있는게 아니야~<br>생각해봐, 좋은 사업 아이템인 코코넛이 있는데?",
+        "en": "What about another option,<br> instead of escaping?<br> There's a business idea<br> to be had with coconuts!",
+        "ja": "無人島でビジネスを<br>やってみるのはどうかな？"
+      },
+      "survive_desc": {
+        "ko": "<li><b>힘든 상황에 감정은 사치야!</b> 힘들어할 겨를도 없이 이미 집을 짓고 있는 나 자신을 발견할걸? 나는 무인도에서도 살아남아서 유명해질거야!</li><li> <b>음.. 잠깐만? 여기 코코넛이 많이 나네? </b>이 넓은 땅이 전부 평지잖아? 여기 좋은 사업부지가 되겠는데? <span class='d-inline-block'>o(一︿一+)o</span> 돌아가면 코코넛 사업을 해봐야겠어. 이 곳에 코코넛 나무가 몇 그루 있는지부터 확인해봐야겠다. 그럼 조사 계획은... 사업 계획은... (열심)</li>",
+        "en": "<li><b>Emotions are luxuries in difficult situations!</b> I could discover that I'm already building a home. Even on a deserted island, I will survive and become famous!</li><li><b>Hm... wait a moment? </b>There are many coconuts here. It could be a great business site! <span class='d-inline-block'>o(一︿一+)o</span> When I go back, I should start a coconut business. I need to check how many coconut trees are here first (working diligently)</li>",
+        "ja": "<li><b>困難な時は感情さえも贅沢品！</b>感じる間もなく集中してたら家を建て終わってるし！無人島で生き残ってむしろ有名になるんだ！</li><li><b>ここはココナッツだらけ！</b>ビジネスに使えそう～！帰ったらココナッツビジネス立ち上げるのだ <span class='d-inline-block'>o(一︿一+)o</span> まず現地調査と事業計画…この場所にいくつのココナッツの木があるか確認だー。（頑張る)</li>"
+      },
+      "match_survive": "8",
+      "match_drift": "14"
+    }
+  ]
+}

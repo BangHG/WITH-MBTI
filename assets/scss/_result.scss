@@ -1,0 +1,433 @@
+﻿$btnGradient: linear-gradient(14deg, #ff96be 0%, #d9a1d3 28%, #9aa0d5 68%, #7fb8e1 100%);
+$btnGradient_hover: linear-gradient(28deg, #ff96be 0%, #d9a1d3 28%, #9aa0d5 68%, #7fb8e1 100%);
+
+// @mixin btn {
+//   overflow: hidden;
+//   position: relative;
+//   &:before {
+//     z-index: -1;
+//     position: absolute;
+//     transition: left 1000ms, filter 500ms;
+//     background: linear-gradient(27deg, #ff96be 14.28% * 0, #d9a1d3 14.28% * 1, #9aa0d5 14.28% * 2, #7fb8e1 14.28% * 3, #ff96be 14.28% * 4, #d9a1d3 14.28% * 5, #9aa0d5 14.28% * 6, #7fb8e1 14.28% * 7);
+//     content: '';
+//     width: 250%;
+//     left: 0;
+//     height: 100%;
+//     top: 0;
+
+//     filter: saturate(100%);
+//   }
+//   &:hover {
+//     &:before {
+//       filter: saturate(140%);
+//       @include lg-min {
+//         // left: -50%;
+//       }
+//     }
+//   }
+// }
+@mixin btn {
+  overflow: hidden;
+  position: relative;
+  filter: saturate(100%);
+  transition: left 1000ms, filter 500ms;
+  background: $btnGradient;
+  &:hover {
+    filter: saturate(140%);
+  }
+}
+
+.page__result {
+  text-align: center;
+  &__title {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1em;
+    // width: css-min(380px, vw(380));
+    height: css-min(80px, vw(80));
+    border-radius: css-min(80px, vw(80));
+    margin: css-min(110px, vw(110)) auto css-min(40px, vw(40));
+    color: #fff;
+    font-weight: 500;
+    font-size: css-min(42px, vw(42));
+    background: $btnGradient;
+    padding-top: 0.1em;
+  }
+  .popup-link {
+    // width: css-min(640px, vw(640));
+    width: 100%;
+    height: css-min(150px, vw(150));
+    border-radius: css-min(150px, vw(150));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    font-size: css-min(60px, vw(60));
+    font-weight: 600;
+    word-spacing: 0.03em;
+    letter-spacing: 0;
+    margin: css-min(80px, vw(80)) auto 0;
+    // background: $btnGradient;
+    padding-top: 0.1em;
+    width: 100%;
+    // transition: 500ms background;
+    @at-root html[lang='en'] & {
+      // html[lang='ja'] & {
+      font-size: css-min(50px, vw(50));
+    }
+    @include btn;
+  }
+  @include lg-min {
+    &__title {
+      height: 44px;
+      border-radius: 44px;
+      font-size: 24px;
+    }
+    .popup-link {
+      height: 84px;
+      border-radius: 84px;
+      font-size: 33px;
+    }
+  }
+
+  .app-download {
+    // padding: css-min(80px, vw(80)) 0;
+    // background-color: #4e303e;
+    text-align: center;
+    margin: css-min(126px, vw(126)) auto css-min(113px, vw(113));
+    &__title {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+      // color: #fff;
+      // margin-bottom: 0.5em;
+      // font-weight: 500;
+      // font-size: css-min(50px, vw(50));
+      // white-space: nowrap;
+    }
+    &__wrap {
+      justify-content: center;
+      display: flex;
+      gap: css-min(17px, vw(17));
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      bottom: vw(48/2);
+      padding: 0 css-min(17px, vw(17));
+      img {
+        height: vw(97/2);
+      }
+    }
+    &__banner {
+      position: relative;
+      height: auto;
+      aspect-ratio: (720/480);
+      background: url(../images/result/bannerOpen/app-download_m--ko.png) no-repeat 50% 0;
+      background-size: cover;
+      border-radius: css-min(25px, vw(25));
+      overflow: hidden;
+      @at-root html[lang='ja'] & {
+        background-image: url(../images/result/bannerOpen/app-download_m--ja.png);
+      }
+      @at-root html[lang='en'] & {
+        background-image: url(../images/result/bannerOpen/app-download_m--en.png);
+      }
+    }
+    @include lg-min {
+      margin: 100px auto 70px;
+      &__wrap {
+        bottom: 40px;
+        img {
+          height: 68px;
+        }
+      }
+      &__banner {
+        border-radius: 13px;
+        aspect-ratio: unset;
+        height: 390px;
+        background-image: url(../images/result/bannerOpen/app-download--ko.png);
+
+        @at-root html[lang='ja'] & {
+          background-image: url(../images/result/bannerOpen/app-download--ja.png);
+        }
+        @at-root html[lang='en'] & {
+          background-image: url(../images/result/bannerOpen/app-download--en.png);
+        }
+      }
+    }
+  }
+}
+.result {
+  text-align: center;
+  min-height: css-min(2400px, vw(2400)); //로딩시 공간 확보
+  * {
+    word-break: keep-all;
+  }
+  .type-title {
+    font-size: css-min(80px, vw(80));
+    color: #f28cc3;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .survive-probability {
+    font-size: css-min(58px, vw(58));
+    font-weight: 700;
+    margin: css-min(30px, vw(30)) auto;
+    line-height: 1;
+  }
+  @at-root html[lang='en'] & {
+    .type-title {
+      font-size: css-min(70px, vw(70));
+      line-height: 1.1;
+    }
+    .survive-probability {
+      line-height: 1.2;
+      span {
+        display: block;
+      }
+    }
+  }
+  .img-bx {
+    margin: 0 auto;
+    max-width: css-min(500px, vw(500));
+    aspect-ratio: 1;
+  }
+  .survive-category {
+    margin: css-min(60px, vw(60)) 0;
+    text-align: left;
+    font-size: css-min(36px, vw(36));
+    // padding-left: css-min(40px, vw(40));
+    display: inline-block;
+    // @at-root html[lang='ja'] & {
+    //   display: inline-block;
+    //   padding: 0;
+    // }
+    li {
+      display: flex;
+      align-items: center;
+      margin-top: 0.3em;
+      font-weight: 600;
+      font-family: $font-family-sub;
+      letter-spacing: -0.01em;
+      &:nth-child(1) {
+        margin-top: 0;
+      }
+      @at-root html[lang='ja'] & {
+        font-family: $font-family-sub-ja;
+        font-weight: 500;
+        align-items: flex-start;
+      }
+    }
+    .counter {
+      font-family: $font-family-main;
+      display: inline-block;
+      color: #878ccb;
+      min-width: 3.3em;
+      font-weight: 600;
+      font-size: css-min(50px, vw(50));
+
+      &:after {
+        content: '%';
+      }
+    }
+  }
+
+  .type-desc {
+    background-color: #fff;
+    border-radius: css-min(30px, vw(30));
+    padding: css-min(80px, vw(80)) css-min(40px, vw(40));
+    font-size: css-min(32px, vw(32));
+    &__title {
+      font-size: css-min(46px, vw(46));
+      font-weight: 600;
+      line-height: (56/46);
+      margin-bottom: 1em;
+    }
+    &__desc {
+      text-align: left;
+      line-height: (40/32);
+      font-family: $font-family-sub;
+      @at-root html[lang='ja'] & {
+        font-family: $font-family-sub-ja;
+      }
+
+      * {
+        font-family: inherit;
+        letter-spacing: -0.01em;
+      }
+      li:nth-child(2) {
+        b:before {
+          background-image: url(../images/result/desc-icon2.png);
+        }
+      }
+      b {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.2em;
+        margin-top: 1em;
+        display: block;
+        font-size: css-min(34px, vw(34));
+        font-weight: 600;
+        padding-left: css-min(70px, vw(70));
+        position: relative;
+        &:before {
+          position: absolute;
+          left: 0;
+          top: 50%;
+          margin-top: css-max(-19px, vw(-19));
+          content: '';
+          display: inline-flex;
+          margin-right: 0.5em;
+          width: css-min(55px, vw(55));
+          height: css-min(38px, vw(38));
+          background: url(../images/result/desc-icon1.png) no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .match {
+    margin-top: css-min(40px, vw(40));
+    display: flex;
+    gap: css-min(20px, vw(20));
+    &__title {
+      font-size: css-min(46px, vw(46));
+      font-weight: 600;
+      line-height: (56/46);
+      margin-bottom: 0.5em;
+
+      @at-root html[lang='en'] & {
+        white-space: nowrap;
+      }
+    }
+    .box {
+      border-radius: css-min(30px, vw(30));
+      padding: css-min(60px, vw(60)) css-min(20px, vw(20));
+      text-align: center;
+      flex: 1 1 50%;
+      background-color: #fff;
+      a {
+        display: block;
+      }
+    }
+    .name {
+      display: block;
+      margin-top: 0.5em;
+      font-weight: 600;
+      font-family: $font-family-sub;
+      line-height: 1.2; //(36/32);
+      font-size: css-min(32px, vw(32));
+      color: rgb(77, 39, 57);
+      @at-root html[lang='ja'] & {
+        font-family: $font-family-sub-ja;
+      }
+    }
+  }
+
+  @include lg-min {
+    .type-title {
+      font-size: 44px;
+      br {
+        // display: none;
+      }
+    }
+    .survive-probability {
+      font-size: 32px;
+    }
+
+    .survive-category {
+      margin: 40px auto;
+      font-size: 20px;
+    }
+    .type-desc {
+      padding: 40px;
+      font-size: 18px;
+      &__title {
+        font-size: 26px;
+      }
+      b {
+        font-size: 19px;
+      }
+    }
+    .match {
+      gap: 20px;
+      &__title {
+        font-size: 26px;
+      }
+      .name {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.result__bottom {
+  padding: 0 0 css-min(67px, vw(67));
+  .title {
+    margin-bottom: 0.5em;
+    font-weight: 600;
+    font-size: css-min(54px, vw(54));
+    color: #4d2739;
+  }
+  .btn-wrap {
+    margin-top: css-min(50px, vw(50));
+    display: flex;
+    gap: css-min(20px, vw(20));
+    .btn {
+      font-weight: 500;
+      color: #fff;
+      flex: 1 1 50%;
+      font-size: css-min(40px, vw(40));
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      // padding-top: 0.3em;
+      height: css-min(120px, vw(120));
+      border-radius: css-min(120px, vw(120));
+      // background-color: #8599d8;
+      // background: $btnGradient;
+      @include btn;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+      line-height: 1.1;
+      @at-root html[lang='en'] &,
+        html[lang='ko'] & {
+        padding-top: 0.2em;
+      }
+
+      @include md {
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @include lg-min {
+    padding-bottom: 105px;
+    .title {
+      font-size: 33px;
+      margin-bottom: 1em;
+    }
+    .btn-wrap {
+      margin-top: 28px;
+      gap: 12px;
+      .btn {
+        font-weight: 600;
+        height: 66px;
+        border-radius: 66px;
+        font-size: 22px;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+﻿@charset 'utf-8';
+@import '_reset.scss';
+@import '_mixin.scss';
+@import '_layout.scss';
+
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GmarketSans';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SUIT-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+$font-family-main: 'GmarketSans', 'SUIT-Regular', sans-serif;
+$font-family-sub: 'SUIT-Regular', sans-serif;
+$font-family-sub-ja: 'Noto Sans JP', sans-serif;
+
+html[lang='en'],
+html[lang='ko'] {
+  body {
+    font-family: 'GmarketSans', 'SUIT-Regular', sans-serif;
+  }
+}
+
+html[lang='ja'] {
+  body {
+    font-family: 'M PLUS Rounded 1c', 'Noto Sans JP', sans-serif;
+    // font-family: 'Noto Sans JP', sans-serif;
+  }
+  .font-family-sub {
+    //일본어폰트 이모티콘 미지원되는 태그에 적용하는 클래스
+    font-family: 'SUIT-Regular', sans-serif;
+  }
+
+  * {
+    word-break: break-all;
+  }
+}
+
+@import '_main.scss';
+@import '_quest.scss';
+@import '_result.scss';
+@import '_sns.scss';
+@import '_popup.scss';

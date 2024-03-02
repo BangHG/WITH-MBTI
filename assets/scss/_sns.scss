@@ -1,0 +1,62 @@
+﻿// .sns-list {
+//   margin-bottom: 3em;
+//   gap: 10px;
+//   li {
+//     flex: 1 1 25%;
+//   }
+//   a {
+//     background-color: #fff;
+//     aspect-ratio: 1;
+//     display: flex;
+//     align-items: center;
+//     text-align: center;
+//     justify-content: center;
+//   }
+// }
+
+.sns-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: css-min(12px, vw(12));
+
+  justify-content: center;
+  &__item {
+    flex: 1 1 calc(16.66%);
+    // flex: 1 1 auto;
+    max-width: 80px;
+  }
+  .sns {
+    word-break: keep-all;
+    aspect-ratio: 1;
+    border: 2px solid #fff;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+
+    &--facebook {
+      background-image: url(../images/inc/sns-facebook.png);
+    }
+    &--whatsapp {
+      background-image: url(../images/inc/sns-whatsapp.png);
+    }
+    &--line {
+      background-image: url(../images/inc/sns-line.png);
+    }
+    &--twitter {
+      background-image: url(../images/inc/sns-twitter.png);
+    }
+    &--kakaotalk {
+      background-image: url(../images/inc/sns-kakaotalk.png);
+    }
+    &--link {
+      background-image: url(../images/inc/sns-link.png);
+    }
+  }
+}
